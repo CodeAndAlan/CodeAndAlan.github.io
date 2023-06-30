@@ -1,0 +1,380 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0px;
+}
+
+
+/* 头部样式 */
+header {
+    align-items: center;
+
+    width: 100%;
+    height: 70vh;
+
+    color: #fff;
+    text-align: center;
+    background-color: none;
+}
+
+#Home-header {
+    margin: 22vh auto 15vh auto;
+}
+
+#avatar {
+    /*①布局 ②盒模型 ③字体 ④背景  ⑤其他*/
+    border-radius: 30%;
+    width: 15vh;
+    height: 15vh;
+}
+
+#sentence {
+    margin: 4%;
+}
+
+#Home-header-text {
+    margin: 0;
+    font-size: 66px;
+    font-weight: 549;
+}
+
+#text-underline {
+    width: 64px;
+    background-color: rgb(39, 211, 39);
+    margin: 1vh auto;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+#arrow {
+    width: 25px;
+    margin: 0 auto;
+    animation-name: down-fadein;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes down-fadein {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(50px)
+    }
+}
+
+/*sceond-body*/
+#second-body {
+    position: relative;
+
+    background-color: black;
+}
+
+/* 左边导航条的样式 */
+/*①最大框*/
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+
+    height: 10vh;
+    padding: 1px;
+
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.8);
+    z-index: 99;
+
+    align-items: center;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+}
+
+#icon {
+    width: 120px;
+    height: 60px;
+
+    margin-left: 30px;
+}
+
+.navbutton {
+    position: absolute;
+    right: 0;
+
+    width: 50%;
+    justify-content: center;
+    display: flex;
+
+    background-color: none;
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+
+/*②小框*/
+.navbutton li {
+    position: relative;
+    top: 2%;
+    right: 5%;
+
+
+    padding: 15px;
+    margin: 0 auto;
+
+    text-align: center;
+    background-color: none;
+    border-radius: 8px;
+}
+
+.navbutton li:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+}
+
+/*③字与超链接*/
+.navbutton li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* 标签容器父元素样式 */
+nav .tag {
+    list-style-type: none;
+
+    width: 80vw;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+
+    justify-content: center;
+    background-color: none;
+
+    border-radius: 8px;
+}
+
+.bio {
+    color: #fff;
+    height: 100%;
+}
+
+
+/* 具体的标签样式 */
+.tag li {
+    padding: 10px;
+    margin: 0 4px;
+
+    color: #fff;
+    background-color: rgb(69, 68, 68);
+
+    border-radius: 8%;
+}
+
+
+
+/* 绿色下划线 */
+.underline {
+    width: 64px;
+    background-color: rgb(39, 211, 39);
+
+    margin: 0 auto;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+/* 关于section */
+section {
+
+    padding: 20px;
+    margin: 15px;
+    /*向右 向下 模糊值 阴影大小 颜色*/
+    box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.2);
+    background-color: #1b1b1b;
+
+    border-radius: 10px;
+    text-align: center;
+}
+
+section h2 {
+    color: #fff;
+}
+
+section h3 {
+    color: #fff;
+}
+
+/*健身部分*/
+
+/*控制轮播图*/
+.circulate {
+    /* position: relative;
+
+    padding-inline-start: 0;
+    height: 12vh;
+    */
+    display: flex;
+
+    margin: 1vh auto;
+    width: 50vw;
+
+    overflow: auto;
+    padding-inline-start: 0px;
+}
+
+.circulate li img {
+    /* position:absolute;
+
+    width:50%;
+    height: 100%;
+     */
+
+    border-radius: 8px;
+    margin: 10px;
+}
+
+/* 读书部分 */
+#Book-re {
+    width: 13vw;
+    height: 3vh;
+    margin: 0 auto;
+
+    color: #dcd7d7;
+    background-color: #696868;
+    border: 2px solid #8e8d8d;
+    border-radius: 8px;
+}
+
+#Book-re::placeholder {
+    color: #f2eeee;
+}
+
+
+/* .circle{
+    position: absolute;
+}
+
+.circle span{
+    position: absolute;
+    left:0;
+    top:0;  
+
+    padding:4px;
+
+    background-color: rgb(146, 150, 146);
+    border-radius: 50%;
+} */
+
+/* .sticky{
+    color: #fff;
+    position: fixed;
+    top:50%;
+}
+.left{
+    text-align: right;
+    left:-2.5%;
+    transform:rotate(-90deg)
+}
+.right{
+    text-align: left;
+    top:50%;
+    right:-2.5%;
+    transform:rotate(90deg)
+} */
+
+
+/*脚注部分*/
+#last-p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+footer {
+    width: 50%;
+    height: 10%;
+    margin: auto auto;
+    padding: 10px;
+
+    text-align: center;
+    color: #fff;
+
+    background-color: none;
+    border-radius: 12px;
+}
+
+
+.Communication {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Communication p {
+    margin: 0 5px;
+    padding: 4px;
+    background-color: rgb(69, 68, 68);
+    border-radius: 8%
+}
+
+.Communication p a {
+    color: #cdc9c9;
+    text-decoration: none;
+}
+
+.Communication p a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#contactBtn {
+    color: #cdc9c9;
+    cursor: pointer;
+}
+
+#contactBtn:hover {
+    color: #fff;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+    background-color: #373839;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 15%;
+    left: 0%;
+
+    border-radius: 8px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
