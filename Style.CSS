@@ -165,12 +165,6 @@ nav .tag {
     border-radius: 8px;
 }
 
-.bio {
-    color: #fff;
-    height: 100%;
-}
-
-
 /* 具体的标签样式 */
 .tag li {
     padding: 10px;
@@ -182,8 +176,6 @@ nav .tag {
     border-radius: 8%;
 }
 
-
-
 /* 绿色下划线 */
 .underline {
     width: 64px;
@@ -193,7 +185,10 @@ nav .tag {
     padding: 2px;
     border-radius: 8px;
 }
-
+.bio {
+    color: #fff;
+    height: 100%;
+}
 /* 关于section */
 section {
 
@@ -214,6 +209,44 @@ section h2 {
 section h3 {
     color: #fff;
 }
+/* 文字部分 */
+#book-container{
+    display: flex;
+    width:60%;
+
+    padding:2px;
+    margin:0 auto;
+
+    border-radius: 8px;
+    background-color: #323131;
+    
+}
+
+.book-tag{
+    margin:0px auto;
+    width:10%;
+    padding-inline-start: 0px;
+
+    border-radius: 8px;
+    background-color: #4f4f4f;
+}
+
+.book-tag li{
+    margin: 5vh auto;
+    border-bottom:dashed 1px black;
+    list-style-type: none;
+    color: #fff;
+}
+
+#book-content{
+    width:90%;
+
+    border-left: solid 2px;
+    background-color: none;
+    overflow: auto;
+}
+
+
 
 /*健身部分*/
 
@@ -245,8 +278,20 @@ section h3 {
 }
 
 /* 读书部分 */
-#Book-re {
-    width: 13vw;
+
+#search img{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+#search img:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 30%;
+}
+
+#Book-se {
+    width: 11   vw;
     height: 3vh;
     margin: 0 auto;
 
@@ -256,7 +301,7 @@ section h3 {
     border-radius: 8px;
 }
 
-#Book-re::placeholder {
+#Book-se::placeholder {
     color: #f2eeee;
 }
 

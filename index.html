@@ -15,7 +15,7 @@
     <!-- 引入页签 -->
     <link rel = "shortcut icon" href = "../img/avatar.jpg" type = "image/x-icon">
     <!-- 引入样式 -->
-    <link rel = "stylesheet" href = "../css/Style.CSS">
+    <link rel = "stylesheet" href = "style.CSS">
 </head>
 
 <body>
@@ -78,19 +78,25 @@
         <section id = "Book">
             <h2 id = "Book-header">书の世界</h2>
             <div class = "underline"></div>
-            <article>
                 <br>
-                <input id = "Book-re" type = "text" placeholder = "输入关键词搜索文章或书籍">
-                <nav>
-                    <ul class = "tag">
-                        <li>技术</li>
-                        <li>文学</li>
-                        <li>心理</li>
-                        <li>科普</li>
-                        <li>其他</li>
-                    </ul>
-                </nav>
-            </article>
+                <div id = "search">
+                    <input id = "Book-se" type = "text" placeholder = "输入关键词搜索文章或书籍">
+                    <img src="img/search.png" >
+                </div>
+                <br>
+                 <div id = "book-container">
+                        <ul class = "book-tag">
+                            <li>技术</li>
+                            <li>文学</li>
+                            <li>心理</li>
+                            <li>科普</li>
+                            <li>其他</li>
+                            <li>文章</li>
+                        </ul>
+                        <div id = "book-content">
+
+                        </div>
+                </div>
 
             <!-- <a href  =  "Book.html" target  =  "_blank">了解更多</a> -->
         </section>
