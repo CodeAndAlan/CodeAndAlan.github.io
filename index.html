@@ -148,7 +148,20 @@
         <p>&copy 2023 黄嘉平. All rights reservered.</p>
     </footer>
 
-  
+    <script>
+        var contactBtn = document.getElementById("contactBtn");
+        var popup = document.getElementById("popup");
+        var closeBtn = document.getElementsByClassName("close")[0];
+
+        contactBtn.onclick = function () {
+            popup.style.display = "block";
+        }
+
+        closeBtn.onclick = function () {
+            popup.style.display = "none";
+        }
+
+    </script>
 
 </body>
 
