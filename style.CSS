@@ -212,19 +212,20 @@ section h3 {
 /* 文字部分 */
 #book-container{
     display: flex;
-    width:60%;
+    width:760px;
 
     padding:2px;
     margin:0 auto;
 
     border-radius: 8px;
     background-color: #323131;
-    
 }
 
 .book-tag{
-    margin:0px auto;
-    width:10%;
+    display:flex;
+    flex-direction: column;
+    margin:0 auto;
+    width:60px;
     padding-inline-start: 0px;
 
     border-radius: 8px;
@@ -232,19 +233,48 @@ section h3 {
 }
 
 .book-tag li{
-    margin: 5vh auto;
-    border-bottom:dashed 1px black;
+    display:flex;
+    flex-direction: column;
+    margin: 10px auto 4px auto ;
+    padding:5px;
     list-style-type: none;
     color: #fff;
 }
+.book-tag li:hover{
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    cursor: pointer;
+}
 
+.book-tag .active{
+    width:30px;
+    margin:0 auto;
+    margin-top:2px;
+
+    border-radius: 2px;
+    background-color: rgb(39, 211, 39);
+    padding:2px;
+}
+
+.book-icon{
+    width:30px;
+    margin:0 0 8px 0;
+}
 #book-content{
-    width:90%;
+    width:700px;
 
     border-left: solid 2px;
     background-color: none;
     overflow: auto;
 }
+#book-content div{
+    display:none;
+}
+#book-content .active{
+    display:block;
+}
+
+
 
 
 

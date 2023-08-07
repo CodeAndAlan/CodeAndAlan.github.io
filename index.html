@@ -8,7 +8,7 @@
 
 <head>
     <meta charset = "UTF-8">
-    <meta name = "description" content = "这是黄嘉平个人的博客，这里记载着我的编程学习足迹和读文字笔记以及撸铁的变化，我觉得这很酷">
+    <meta name = "description" content = "这是白熊个人的博客，这里记载着我的编程学习足迹和读文字笔记以及撸铁的变化，我觉得这很酷">
     <meta name = "keywords" content = "个人,博客,读文字,健身,学习编程">
     <meta name = "viewport" content = "width   =   device-width, initial-scale   =   1.0">
     <title>Mood Forest</title>
@@ -20,10 +20,10 @@
 
 <body>
     <nav id = "navbar">
-        <a href = "Home.html"><img id = "icon" src = "../img/icon.png"></a>
+        <a href = "index.html"><img id = "icon" src = "../img/icon.png"></a>
         <ul class = "navbutton">
             <li><a href = "#AboutMe-header">关于我</a></li>
-            <li><a href = "#Code-header">编程之路</a></li>
+            <li><a href = "#Code-header">个人作品</a></li>
             <li><a href = "#Book-header">书の世界</a></li>
             <li><a href = "#Workout-header">关于健身</a></li>
             <li><a href = "#Communication-header">联系我</a></li>
@@ -34,7 +34,7 @@
             <img id = "avatar" src = "../img/avatar.jpg">
             <h1 id = "Home-header-text">反复与坚持之后，柔水终成雕刀。</h1>
             <div id = "text-underline"></div>
-            <p id = "sentence">/*这里是黄嘉平的个人主页*/</p>
+            <p id = "sentence">/*这里是白熊的个人主页*/</p>
         </div>
         <div><img id = "arrow" src = "../img/arrow.png"></div>
     </header>
@@ -53,9 +53,10 @@
                 </ul>
             </nav>
             <div class = "bio">
-                <p>这里是黄嘉平.</p>
-                <p>喜欢读文字、敲代码、撸铁、LOL以及一点音乐和摄影...</p>
-                <p>也爱思考一些奇怪的问题.</p>
+                <p>这里是白熊.</p>
+                <p>喜欢读文字、敲代码、撸铁、LOL...</p>
+                <p>很宅，不喜欢尝试新东西.</p>
+                <p>爱思考一些奇怪的问题.</p>
                 <p>总之，很高兴你能访问我的主页.</p>
                 <p>日后请多指教！</p>
             </div>
@@ -63,13 +64,14 @@
 
         <!-- 编程部分 -->
         <section id = "Code">
-            <h2 id = "Code-header">编程之路</h2>
+            <h2 id = "Code-header">个人作品</h2>
             <div class = "underline"></div>
             <nav>
                 <ul class = "tag">
                     <li>个人主页</li>
                     <li>小程序</li>
                     <li>应用程序</li>
+                    <li>视频</li>
                 </ul>
             </nav>
         </section>
@@ -86,15 +88,29 @@
                 <br>
                  <div id = "book-container">
                         <ul class = "book-tag">
-                            <li>技术</li>
-                            <li>文学</li>
-                            <li>心理</li>
-                            <li>科普</li>
-                            <li>其他</li>
-                            <li>文章</li>
+                            <li>
+                                <img class = "book-icon" src="img/科学技术-82.png" >
+                                技术
+                                <div class = "book-underline active" ></div>
+                            </li>
+                            
+                            <li>
+                                <img class = "book-icon" src="img/心理调整.png">
+                                心理
+                                <div class = "book-underline"></div>  
+                            </li>  
+                                             
+                            <li style = "margin-bottom:20px">
+                                <img class = "book-icon" src="img/文学 .png">
+                                文学
+                                <div class = "book-underline"></div>
+                            </li>    
                         </ul>
-                        <div id = "book-content">
 
+                        <div id = "book-content">
+                            <div class = "active"><img src="img/科学技术-82.png" ></div>
+                            <div><img src="img/心理调整.png" ></div>
+                            <div><img src="img/文学 .png" ></div>
                         </div>
                 </div>
 
@@ -103,12 +119,12 @@
 
         <!-- 健身部分 -->
         <section id = "Workout">
-            <h2 id = "Workout-header">关于健身</h2>
+            <h2 id = "Workout-header">小站の历程</h2>
             <div class = "underline"></div>
 
             <nav>
                 <ul class = "circulate">
-                    <li><img src = "../img/circulate1.png"></li>
+                    <li><img src = "../img/circulate1.png"></li>                   
                     <li><img src = "../img/circulate2.png"></li>
                     <li><img src = "../img/circulate3.png"></li>
                     <li><img src = "../img/circulate4.png"></li>
@@ -145,23 +161,10 @@
                 <p>395944730@qq.com</p>
             </div>
         </div>
-        <p>&copy 2023 黄嘉平. All rights reservered.</p>
+        <p>&copy 2023 白熊. All rights reservered.</p>
     </footer>
 
-    <script>
-        var contactBtn = document.getElementById("contactBtn");
-        var popup = document.getElementById("popup");
-        var closeBtn = document.getElementsByClassName("close")[0];
-
-        contactBtn.onclick = function () {
-            popup.style.display = "block";
-        }
-
-        closeBtn.onclick = function () {
-            popup.style.display = "none";
-        }
-
-    </script> 
+    <script src = "script.js"></script> 
      
 
 </body>
